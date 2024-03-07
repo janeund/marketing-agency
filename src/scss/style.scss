@@ -1,6 +1,7 @@
 @use "sass:math";
 
-@use "./layouts/index";
+@use "./layouts/index" as *;
+@use "./abstracts/index" as *;
 
 // Import fonts
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
@@ -18,4 +19,8 @@
   flex: 1 1 auto;
 }
 
-
+.container {
+  max-width: toRem($containerWidth);
+  padding-inline: toRem(math.div($containerPadding, 2));
+  margin-inline: auto;
+}
