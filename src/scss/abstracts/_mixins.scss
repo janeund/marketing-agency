@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // Convert px tp percent, REM, EM
 @function percent($px, $from: 100) {
 	$result: math.div($px, $from) * 100%;

@@ -1,1 +1,10 @@
 @use "../abstracts/index" as *;
+
+.header {
+  &__container {
+    min-height: toRem(68);
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
