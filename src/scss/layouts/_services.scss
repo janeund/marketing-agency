@@ -1,0 +1,59 @@
+@use "../abstracts/index" as *;
+
+.services {
+  &__items {
+    display: grid;
+    grid-template-columns: minmax(toRem(300), toRem(600)) minmax(toRem(300), toRem(600));
+    align-items: center;
+    justify-content: center;
+    grid-gap: toRem(50);
+  }
+  &__item {
+    padding: toRem(40);
+    max-width: toRem(630);
+    height: toRem(310);
+    background-color: $colorGrey;
+    border-radius: toRem(45);
+    box-shadow: 0 toRem(4) toRem(10) 0 rgba(0,0,0,0.3);;
+  }
+}
+
+.services-item {
+  display: flex;
+  justify-content: space-between;
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__title {
+    display: inline;
+    max-width: toRem(180);
+    font-size: toRem(25);
+    font-weight: 500;
+    line-height: 1.2;
+    span {
+      background-color: $colorGreen;
+    }
+  }
+}
+
+.services-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: toRem(10);
+    width: toRem(41);
+    height: toRem(41);
+    border-radius: 50%;
+    background-color: $colorGreen;
+    
+  }
+  &__text {
+
+  }
+}

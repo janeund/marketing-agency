@@ -24,3 +24,22 @@
   padding-inline: toRem(math.div($containerPadding, 2));
   margin-inline: auto;
 }
+
+.section-header {
+  margin-bottom: toRem(50);
+}
+
+.section-title {
+  font-size: toRem(40);
+  font-weight: 500;
+  background-color: $colorGreen;
+  padding: toRem(2);
+  display: inline-block;
+  margin-right: toRem(20);
+}
+
+.section-desc {
+  display: inline-block;
+  max-width: toRem(580);
+  line-height: 1.2;
+}
