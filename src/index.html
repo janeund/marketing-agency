@@ -2,12 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- <meta name="format-detection" content="telephone=no"> -->
+  <!-- <link rel="shortcut icon" href="favicon.ico"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-  <div class="rootpage">
-    
+  <div class="wrapper">
+    <main class="page">
+      <header class="header">
+        <div class="header__container">
+          <div class="header logo">
+            <img src="" alt="">
+          </div>
+          <div class="header__menu menu">
+            <button class="menu__icon icon-menu" type="button"><span></span></button>
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item"><a href="#" class="menu__link">About Us</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Services</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Use Cases</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Contacts</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__cta">Request a quote</div>
+        </div>
+      </header>
+    </main>
   </div>
 </body>
 </html>
