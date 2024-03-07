@@ -3,7 +3,6 @@
 .hero {
   padding: toRem(70) 0;
   min-height: 100vh;
-  margin-bottom: toRem(80);
   &__body {
     display: grid;
     grid-template-columns: minmax(toRem(330), toRem(530)) 1fr;

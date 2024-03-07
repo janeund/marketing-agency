@@ -15,8 +15,12 @@
   overflow: hidden;
 }
 
-.main {
+.page {
   flex: 1 1 auto;
+}
+
+section:not(:last-child) {
+  margin-bottom: toRem(150);
 }
 
 .container {

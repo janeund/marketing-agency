@@ -1,0 +1,33 @@
+@use "../abstracts/index" as *;
+
+.cases {
+  &__items {
+    display: flex;
+    column-gap: toRem(60);
+    padding: toRem(60);
+    border-radius: toRem(45);
+    background-color: $colorDark;
+    color: $colorWhite;
+  }
+}
+
+.cases-item {
+  &__desc {
+    line-height: 1.2;
+    margin-bottom: toRem(20);
+  }
+  padding-inline: toRem(60);
+  &__button {
+    display: flex;
+    cursor: pointer;
+  }
+  &__text {
+    font-size: toRem(20);
+    color: $colorGreen;
+    margin-right: toRem(10);
+  }
+}
+
+.cases-item:not(:last-child) {
+  border-right: 1px solid $colorWhite;
+}
