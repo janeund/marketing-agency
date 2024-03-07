@@ -1,0 +1,30 @@
+@use "../abstracts/index" as *;
+
+.hero {
+  padding: toRem(70) 0;
+  min-height: 100vh;
+  &__body {
+    display: grid;
+    grid-template-columns: minmax(toRem(330), toRem(530)) 1fr;
+    column-gap: toRem(160);
+  }
+  &__title {
+    font-size: toRem(60);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: toRem(30);
+  }
+  &__info {
+    font-size: toRem(20);
+    line-height: 1.2;
+    margin-bottom: toRem(30);
+  }
+  &__button {
+    display: inline-block;
+    font-size: toRem(20);
+    background-color: $colorDark;
+    color: $colorWhite;
+    padding: toRem(20) toRem(30);
+    border-radius: toRem(14);
+  }
+}
