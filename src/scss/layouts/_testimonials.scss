@@ -1,0 +1,56 @@
+@use "../abstracts/index" as *;
+
+.testimonials {
+  &__content {
+    background-color: $colorDark;
+    padding-top: toRem(84);
+    padding-bottom: toRem(68);
+    border-radius: toRem(45);
+  }
+  &__items {
+    display: flex;
+    column-gap: toRem(30);
+  }
+}
+
+.testimonials-item {
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: toRem(526);
+    padding: toRem(20);
+    border: 1px solid $colorGreen;
+    color: $colorWhite;
+    border-radius: toRem(45);
+    line-height: 1.2;
+    margin-bottom: toRem(30);
+  }
+}
+
+.person {
+  &__name {
+    font-weight: 500;
+    color: $colorGreen;
+  }
+  &__position {
+    color:  $colorWhite;
+  }
+}
+
+.conrols {
+  display: flex;
+  justify-content: center;
+  column-gap: toRem(189);
+  margin-top: toRem(70);
+}
+
+.controls-dots {
+  display: flex;
+  column-gap: toRem(19);
+}
+
+.controls-dots__item--active svg path{
+  fill: $colorGreen;
+}

@@ -1,0 +1,63 @@
+@use "../abstracts/index" as *;
+
+.process {
+  &__items {
+    
+  }
+}
+
+.process-item {
+  padding: toRem(40);
+  background-color: $colorGreen;
+  border-radius: toRem(45);
+  box-shadow: 0 toRem(4) toRem(10) 0 rgba(0,0,0,0.3);
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding-bottom: toRem(30);
+  }
+  &__desc {
+    display: none;
+    border-top: 1px solid $colorDark;
+    padding-top: toRem(20);
+  }
+  &__title-text {
+    font-size: toRem(30);
+    font-weight: 500;
+    span {
+      font-size: toRem(40);
+      margin-right: toRem(10);
+    }
+  }
+}
+
+.process-item:not(:last-child) {
+  margin-bottom: toRem(20);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: toRem(58);
+  height: toRem(58);
+  border: 1px solid $colorDark;
+  border-radius: 50%;
+  background-color: $colorGrey;
+}
+
+.minus-icon {
+  display: none;
+}
+
+.show-text .minus-icon {
+  display: inline;
+}
+.show-text .plus-icon {
+  display: none;
+}
+
+.process-item__desc .show-text {
+  display: block;
+}
