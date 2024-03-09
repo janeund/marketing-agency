@@ -7,6 +7,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 
+html {
+  scroll-behavior: smooth;
+}
+
 // Styles
 .wrapper {
   min-height: 100%;
@@ -19,7 +23,7 @@
   flex: 1 1 auto;
 }
 
-section:not(:last-child) {
+.section-mb {
   margin-bottom: toRem(150);
 }
 
@@ -27,6 +31,35 @@ section:not(:last-child) {
   max-width: toRem($containerWidth);
   padding-inline: toRem(math.div($containerPadding, 2));
   margin-inline: auto;
+}
+
+.logo {
+  display: flex;
+  column-gap: toRem(10);
+  &__text {
+    font-size: toRem(36);
+    font-weight: 500;
+  }
+}
+
+.menu {
+  &__icon {
+    display: none;
+  }
+  &__list {
+    display: flex;
+    column-gap: toRem(40);
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__link {
+    padding-top: toRem(5);
+    padding-bottom: toRem(5);
+    transition: all 0.3s ease-in-out;
+  }
+  &__link:hover {
+    border-radius: toRem(5);
+  }
 }
 
 .section-header {

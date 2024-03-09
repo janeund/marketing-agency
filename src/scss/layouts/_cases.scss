@@ -12,22 +12,38 @@
 }
 
 .cases-item {
+  padding-inline: toRem(60);
   &__desc {
     line-height: 1.2;
     margin-bottom: toRem(20);
   }
-  padding-inline: toRem(60);
+  
   &__button {
     display: flex;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  &__button:hover {
+    .cases-item__text {
+      color: $colorWhite;
+    }
+    .cases-svg path {
+      fill: $colorWhite;
+    }
   }
   &__text {
     font-size: toRem(20);
     color: $colorGreen;
     margin-right: toRem(10);
+    transition: all 0.3s ease-in-out;
   }
+}
+
+.cases-svg path {
+  transition: all 0.3s ease-in-out;
 }
 
 .cases-item:not(:last-child) {
   border-right: 1px solid $colorWhite;
 }
+

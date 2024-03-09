@@ -19,7 +19,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: toRem(526);
+    max-width: toRem(606);
     padding: toRem(20);
     border: 1px solid $colorGreen;
     color: $colorWhite;
@@ -53,4 +53,12 @@
 
 .controls-dots__item--active svg path{
   fill: $colorGreen;
+}
+
+.slider {
+ overflow: hidden;
+}
+
+.slide {
+  min-width: toRem(606);
 }

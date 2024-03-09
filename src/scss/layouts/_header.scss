@@ -2,7 +2,7 @@
 
 .header {
   &__container {
-    min-height: toRem(68);
+    min-height: toRem(100);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,29 +10,19 @@
   &__cta {
     font-size: toRem(20);
     border: 1px solid $colorBlack;
-    padding: toRem(10) toRem(20);
+    padding: toRem(20) toRem(30);
     border-radius: toRem(14);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
   }
 }
 
-.logo {
-  display: flex;
-  column-gap: toRem(10);
-  &__text {
-    font-size: toRem(36);
-    font-weight: 500;
-  }
+.header-link {
+  padding-inline: toRem(7);
 }
 
-.menu {
-  &__icon {
-    display: none;
-  }
-  &__list {
-    display: flex;
-    column-gap: toRem(40);
-    justify-content: space-between;
-    align-items: center;
-    font-size: toRem(20);
-  }
+.header-link:hover,
+.header__cta:hover {
+  color: $colorGreen;
+  background-color: $colorBlack;
 }

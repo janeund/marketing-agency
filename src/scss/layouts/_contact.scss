@@ -1,0 +1,54 @@
+@use "../abstracts/index" as *; 
+
+.contact {
+  margin-bottom: toRem(100);
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: toRem(60) toRem(150) toRem(80) toRem(100);
+    border-radius: toRem(45);
+    background-color: $colorGrey;
+  }
+}
+
+.contact-form {
+  &__wrapper {
+    max-width: toRem(556);
+  }
+  &__input:not(:last-child) {
+    margin-bottom: toRem(20);
+  }
+  &__input {
+    display: flex;
+    flex-direction: column;
+    input,
+    textarea {
+      width: toRem(556);
+      padding: toRem(15);
+      border: toRem(1) solid $colorBlack;
+      border-radius: toRem(14);
+    }
+    textarea {
+      resize: none;
+    }
+    label {
+      margin-bottom: toRem(7);
+    }
+  }
+  &__button {
+    width: 100%;
+    margin-top: toRem(50);
+    padding: toRem(20) toRem(10);
+    border: toRem(1) solid $colorBlack;
+    border-radius: toRem(14);
+    background-color: $colorBlack;
+    color: $colorWhite;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  &__button:hover {
+    background-color: $colorGreen;
+    color: $colorBlack;
+  }
+}

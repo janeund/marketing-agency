@@ -1,16 +1,11 @@
 @use "../abstracts/index" as *;
 
-.process {
-  &__items {
-    
-  }
-}
-
 .process-item {
   padding: toRem(40);
-  background-color: $colorGreen;
+  background-color: $colorGrey;
   border-radius: toRem(45);
   box-shadow: 0 toRem(4) toRem(10) 0 rgba(0,0,0,0.3);
+  transition: all 0.3s ease-in-out;
   &__title {
     display: flex;
     justify-content: space-between;
@@ -47,17 +42,32 @@
   background-color: $colorGrey;
 }
 
+.question-text {
+  display: none;
+}
+.show-text .question-text {
+  display: block;
+}
+
 .minus-icon {
   display: none;
 }
 
 .show-text .minus-icon {
-  display: inline;
+  display: flex;
 }
 .show-text .plus-icon {
   display: none;
 }
 
-.process-item__desc .show-text {
+.show-text.process-item {
+  background-color: $colorGreen;
+}
+
+.show-text .process-item__desc {
   display: block;
+}
+
+.show-text .process-item__title {
+  padding-bottom: toRem(30);
 }

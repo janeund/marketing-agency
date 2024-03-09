@@ -1,7 +1,7 @@
 @use "../abstracts/index" as *;
 
 .hero {
-  padding: toRem(70) 0;
+  padding-top: toRem(70);
   min-height: 100vh;
   &__body {
     display: grid;
@@ -23,6 +23,14 @@
     background-color: $colorDark;
     color: $colorWhite;
     padding: toRem(20) toRem(30);
+    border: toRem(1) solid $colorDark;
     border-radius: toRem(14);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
   }
+  &__button:hover {
+    background-color: $colorGreen;
+    color: $colorBlack;
+  }
+
 }
