@@ -23,9 +23,6 @@ html {
   flex: 1 1 auto;
 }
 
-.section-mb {
-  margin-bottom: toRem(150);
-}
 
 .container {
   max-width: toRem($containerWidth);
@@ -46,12 +43,6 @@ html {
   &__icon {
     display: none;
   }
-  &__list {
-    display: flex;
-    column-gap: toRem(40);
-    justify-content: space-between;
-    align-items: center;
-  }
   &__link {
     padding-top: toRem(5);
     padding-bottom: toRem(5);
@@ -63,11 +54,13 @@ html {
 }
 
 .section-header {
+  display: flex;
   margin-bottom: toRem(50);
+  align-items: center;
 }
 
 .section-title {
-  font-size: toRem(40);
+  font-size: clamp(toRem(20), 2vw, toRem(40));
   font-weight: 500;
   background-color: $colorGreen;
   padding: toRem(2);
@@ -79,4 +72,35 @@ html {
   display: inline-block;
   max-width: toRem(580);
   line-height: 1.2;
+}
+
+// Utility classes
+.section-mb {
+  margin-bottom: toRem(150);
+}
+
+@media (max-width: 1154px) {
+  .section-mb {
+    margin-bottom: toRem(50);
+  }
+}
+
+.bg-clr-green {
+  background-color: $colorGreen;
+}
+
+.bg-clr-grey {
+  background-color: $colorGrey;
+}
+
+.bg-clr-dark {
+  background-color: $colorDark;
+}
+
+.bg-clr-white {
+  background-color: $colorWhite;
+}
+
+.clr-white {
+  color: $colorWhite;
 }

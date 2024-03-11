@@ -2,14 +2,15 @@
 
 .services {
   &__items {
-    display: grid;
-    grid-template-columns: minmax(toRem(300), toRem(600)) minmax(toRem(300), toRem(600));
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     grid-gap: toRem(50);
   }
   &__item {
     padding: toRem(40);
+    min-width: toRem(530);
     max-width: toRem(630);
     height: toRem(310);
     background-color: $colorGrey;
@@ -20,6 +21,7 @@
 
 .services-item {
   display: flex;
+  
   justify-content: space-between;
   &__info {
     display: flex;
@@ -32,10 +34,11 @@
     font-size: toRem(25);
     font-weight: 500;
     line-height: 1.2;
-    span {
-      background-color: $colorGreen;
-    }
   }
+}
+
+.title-inner {
+  background-color: $colorGreen;
 }
 
 .services-button {
@@ -50,7 +53,7 @@
     width: toRem(41);
     height: toRem(41);
     border-radius: 50%;
-    background-color: $colorGreen;
+    background-color: $colorDark;
     
   }
   &__text {

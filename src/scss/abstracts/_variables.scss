@@ -1,6 +1,6 @@
 // Declare variables
 $fontFamily: "Space Grotesk";
-$fontSize: toRem(18);
+$fontSize: clamp(0.75rem, 2vw, 1.1rem);
 
 // Main colors
 $colorGreen: #b9ff66;

@@ -15,7 +15,15 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
   }
+  &__menu-list {
+    display: flex;
+    max-height: 100%;
+    column-gap: toRem(40);
+    justify-content: space-between;
+    align-items: center;
+  }
 }
+
 
 .header-link {
   padding-inline: toRem(7);
@@ -25,4 +33,34 @@
 .header__cta:hover {
   color: $colorGreen;
   background-color: $colorBlack;
+}
+
+@media (max-width: 990px) {
+.header__menu-list {
+  // display: none;
+  column-gap: toRem(20);
+ }
+}
+
+@media (max-width: 890px) {
+ .header {
+  position: relative;
+}
+.header__menu-list {
+  // display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 500px;
+  justify-content: center;
+  row-gap: toRem(40);
+  padding: toRem(20);
+  background-color: $colorBlack;
+  color: $colorWhite;
+  font-weight: 500;
+  border-bottom-left-radius: toRem(15);
+  font-size: toRem(30);
+ }
 }

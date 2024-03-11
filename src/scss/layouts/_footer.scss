@@ -87,6 +87,11 @@
 }
 
 .subscribe {
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
   &__input,
   &__button {
     display: inline-block;
@@ -118,8 +123,15 @@
   }
 }
 
-.form-item:not(:last-child) {
-  margin-right: toRem(20);
+.footer__menu-list {
+  display: flex;
+  column-gap: toRem(40);
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1154px) {
+
 }
 
 .footer-copy {

@@ -3,7 +3,6 @@
 .cases {
   &__items {
     display: flex;
-    column-gap: toRem(60);
     padding: toRem(60);
     border-radius: toRem(45);
     background-color: $colorDark;
@@ -12,9 +11,8 @@
 }
 
 .cases-item {
-  padding-inline: toRem(60);
+  padding-inline: toRem(40);
   &__desc {
-    line-height: 1.2;
     margin-bottom: toRem(20);
   }
   
@@ -47,3 +45,17 @@
   border-right: 1px solid $colorWhite;
 }
 
+@media (max-width: 1150px) {
+  .cases-item {
+  padding-inline: toRem(20);
+ }
+}
+
+@media (max-width: 770px) {
+  .cases__items {
+  padding: toRem(30);
+ }
+}
+
+
+  

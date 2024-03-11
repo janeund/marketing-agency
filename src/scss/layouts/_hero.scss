@@ -4,18 +4,16 @@
   padding-top: toRem(70);
   min-height: 100vh;
   &__body {
-    display: grid;
-    grid-template-columns: minmax(toRem(330), toRem(530)) 1fr;
-    column-gap: toRem(160);
+    display: flex;
+    justify-content: space-between;
+    gap: 20%;
   }
   &__title {
-    font-size: toRem(60);
+    font-size: clamp(toRem(10), 5vw, toRem(60));
     font-weight: 500;
-    line-height: 1.2;
     margin-bottom: toRem(30);
   }
   &__info {
-    line-height: 1.2;
     margin-bottom: toRem(30);
   }
   &__button {
@@ -32,5 +30,56 @@
     background-color: $colorGreen;
     color: $colorBlack;
   }
-
+  
+  &__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: toRem(20);
+    justify-content: space-between;
+    margin-top: toRem(70);
+  }
 }
+
+.menu-line {
+  width: toRem(20);
+  height: toRem(4);
+  background-color: $colorBlack;
+}
+
+@media (max-width: 1230px) {
+  .hero__body {
+    gap: 10%;
+  }
+  .hero__image svg {
+    max-width: toRem(500);
+  }
+}
+
+@media (max-width: 1165px) {
+  .hero__title {
+    font-size: toRem(50);
+  }
+  .hero__image svg {
+    max-width: toRem(450);
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero__title {
+    font-size: toRem(40);
+  }
+  .hero__image svg {
+    max-width: toRem(400);
+  }
+  .hero {
+  padding-top: toRem(20);
+  }
+}
+
+@media (max-width: 706px) {
+  .hero__body {
+    flex-direction: column;
+    gap: toRem(20);
+  }
+}
+  
