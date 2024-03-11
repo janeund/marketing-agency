@@ -33,22 +33,21 @@
   
   &__bottom {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: toRem(20);
-    justify-content: space-between;
+    column-gap: toRem(110);
+    row-gap: toRem(20);
     margin-top: toRem(70);
   }
-}
-
-.menu-line {
-  width: toRem(20);
-  height: toRem(4);
-  background-color: $colorBlack;
 }
 
 @media (max-width: 1230px) {
   .hero__body {
     gap: 10%;
+  }
+  .hero__bottom {
+    column-gap: toRem(50);
   }
   .hero__image svg {
     max-width: toRem(500);

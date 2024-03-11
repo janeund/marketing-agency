@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    grid-gap: toRem(50);
+    grid-gap: toRem(40);
   }
   &__item {
     padding: toRem(40);
@@ -60,3 +60,15 @@
 
   }
 }
+
+
+@media (max-width: 620px) {
+    .services-item {
+      padding: toRem(30);
+      height: toRem(250);
+      min-width: toRem(230);
+    } 
+    .services-item svg {
+      max-width: toRem(120);
+    }
+  }

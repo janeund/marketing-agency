@@ -9,6 +9,7 @@
     padding: toRem(60) toRem(150) toRem(80) toRem(100);
     border-radius: toRem(45);
     background-color: $colorGrey;
+    column-gap: toRem(20);
   }
 }
 
@@ -50,5 +51,44 @@
   &__button:hover {
     background-color: $colorGreen;
     color: $colorBlack;
+  }
+}
+
+@media (max-width: 1130px) {
+  .contact-form__wrapper {
+    max-width: toRem(356);
+  }
+  input,
+  textarea {
+    max-width: toRem(356);
+  }
+  .contact-form__image svg {
+    max-width: toRem(350);
+  }
+}
+
+@media (max-width: 880px) {
+  .contact-form__image{
+    display: none;
+  }
+  .contact__content {
+    justify-content: center;
+    column-gap: 0;
+  }
+}
+
+@media (max-width: 516px) {
+  .contact__content {
+    padding: toRem(30);
+  }
+  .contact-form__wrapper {
+    max-width: toRem(256);
+  }
+  input,
+  textarea {
+    max-width: toRem(256);
+  }
+  .contact-form__button {
+    margin-top: 0;
   }
 }

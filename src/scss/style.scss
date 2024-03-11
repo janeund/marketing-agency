@@ -59,6 +59,15 @@ html {
   align-items: center;
 }
 
+@media (max-width: 1038px) {
+  .section-header {
+    display: flex;
+    margin-bottom: toRem(35);
+    align-items: center;
+  }
+}
+
+
 .section-title {
   font-size: clamp(toRem(20), 2vw, toRem(40));
   font-weight: 500;

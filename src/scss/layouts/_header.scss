@@ -24,6 +24,11 @@
   }
 }
 
+.menu-line {
+  width: toRem(2);
+  height: toRem(4);
+  background-color: $colorBlack;
+}
 
 .header-link {
   padding-inline: toRem(7);
@@ -43,7 +48,7 @@
 }
 
 @media (max-width: 890px) {
- .header {
+ .wrapper {
   position: relative;
 }
 .header__menu-list {

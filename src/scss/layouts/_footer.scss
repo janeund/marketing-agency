@@ -16,6 +16,7 @@
   &__content {
     display: flex;
     justify-content: space-between;
+    gap: toRem(10);
     margin-top: toRem(60);
     padding-bottom: toRem(40);
     border-bottom: toRem(1) solid $colorWhite;
@@ -90,6 +91,8 @@
   &__form {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
   }
   &__input,
@@ -99,7 +102,7 @@
     border-radius: toRem(14);
   }
   &__input {
-    width: toRem(285);
+    max-width: toRem(255);
     padding: toRem(22) toRem(35);
     background-color: transparent;
     color: $colorWhite;
@@ -109,8 +112,8 @@
     opacity: 1; /* Firefox */
   }
   &__button {
-    width: toRem(249);
-    padding: toRem(25) toRem(36);
+    max-width: toRem(255);
+    padding: toRem(23) toRem(36);
     border: toRem(1) solid $colorBlack;
     color: $colorBlack;
     background-color: $colorGreen;
@@ -130,10 +133,6 @@
   align-items: center;
 }
 
-@media (max-width: 1154px) {
-
-}
-
 .footer-copy {
   display: flex;
   align-items: center;
@@ -142,4 +141,32 @@
   &__link {
     text-decoration: underline;
   }
+}
+
+@media (max-width: 1124px) {
+ .footer__menu-list {
+  flex-direction: column;
+  row-gap: toRem(20);
+ }
+ .footer__content {
+  flex-direction: column;
+  margin-top: toRem(20);
+ }
+ .subscribe {
+  padding: toRem(30) toRem(20);
+  max-width: toRem(600);
+ }
+}
+
+@media (max-width: 630px) {
+ .footer__header {
+  flex-direction: column;
+  row-gap: toRem(30);
+ }
+}
+
+@media (max-width: 440px) {
+ .footer__body {
+  padding: toRem(30);
+ }
 }
