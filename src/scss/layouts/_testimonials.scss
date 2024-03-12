@@ -3,8 +3,8 @@
 .testimonials {
   &__content {
     background-color: $colorDark;
-    padding-top: toRem(84);
-    padding-bottom: toRem(68);
+    padding-top: toRem(20);
+    padding-bottom: toRem(80);
     border-radius: toRem(45);
   }
   &__items {
@@ -12,17 +12,45 @@
     align-items: center;
     justify-content: center;
     column-gap: toRem(40);
-    scroll-snap-type: x mandatory;
-    -ms-overflow-style: none;
     scrollbar-width: none;
   }
   &__items::-webkit-scrollbar {
     display: none;
   }
+  &__arrows {
+
+  }
+}
+
+.testimonials-item.slide-active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide.next {
+  transform: translateX(100%);
+}
+.slide.last {
+  transform: translateX(-100%);
+}
+
+.arrow-right {
+  
+}
+
+.slides-container {
+  display: flex;
+  position: relative;
+  width: 600px;
+  height: 350px;
+  // overflow: hidden;
 }
 
 .testimonials-item {
-  scroll-snap-align: center;
+  position: absolute;
+  top: 20%;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
   min-width: toRem(500);
   display: flex;
   flex-direction: column;

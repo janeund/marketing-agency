@@ -11,17 +11,15 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container container">
-        <div class="header__logo logo">
+        <a class="header__logo logo" href="index.html">
           <div class="logo__icon">
             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M17.9986 5.53472L35.5997 0.349121L30.464 18.0001L35.5997 35.6012L17.9986 30.4655L0.347656 35.6012L5.53325 18.0001L0.347656 0.349121L17.9986 5.53472Z" fill="black"/>
             </svg>
           </div>
           <div class="logo__text">Positivus</div>
-        </div>
-        
+        </a>
         <div class="header__menu menu">
-          <div class="menu__icon icon-menu"><span class="menu-line">ff</span></div>
           <nav class="header__menu-body">
             <ul class="header__menu-list">
               <li class="menu__item"><a href="#hero" class="menu__link header-link">About Us</a></li>
@@ -30,8 +28,14 @@
               <li class="menu__item"><a href="#contact" class="menu__link header-link">Contact Us</a></li>
             </ul>
           </nav>
+          <a class="header__cta">Contact Us</a>
         </div>
-        <a class="header__cta">Contact Us</a>
+        
+        <div class="burger-menu">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </div>
       </div>
     </header>
     <main class="page">
@@ -319,7 +323,7 @@
                 </li>
                 <li class="cases__item cases-item">
                   <div class="cases-item__desc">
-                    <p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
+                    <p>For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.</p>
                   </div>
                   <a class="cases-item__button">
                     <p class="cases-item__text">Learn more</p>
@@ -332,7 +336,7 @@
                 </li>
                 <li class="cases__item cases-item">
                   <div class="cases-item__desc">
-                    <p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
+                    <p>For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.</p>
                   </div>
                   <a class="cases-item__button">
                     <p class="cases-item__text">Learn more</p>
@@ -440,7 +444,7 @@
           </div>
         </div>
       </section>
-      <section class="testimonials section-mb">
+      <!-- <section class="testimonials section-mb">
         <div class="testimonials__container container">
           <div class="testimonials__body">
             <div class="testimonials__header section-header">
@@ -448,59 +452,50 @@
               <p class="testimonials__desc section-desc">Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services</p>
             </div>
             <div class="testimonials__content">
-              <div class="testimonials__items slider">
-                <div class="testimonials__item testimonials-item slide">
-                  <div class="testimonials-item__text">
-                    <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
-                  </div>
-                  <div class="testimonials-item__person person">
-                    <p class="person__name">John Smith</p>
-                    <p class="person__position">Marketing Director at XYZ Corp</p>
-                  </div>
-                </div>
-                <div class="testimonials__item testimonials-item slide">
-                  <div class="testimonials-item__text">
-                    <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
-                  </div>
-                  <div class="testimonials-item__person person">
-                    <p class="person__name">John Smith</p>
-                    <p class="person__position">Marketing Director at XYZ Corp</p>
-                  </div>
-                </div>
-                <div class="testimonials__item testimonials-item slide">
-                  <div class="testimonials-item__text">
-                    <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
-                  </div>
-                  <div class="testimonials-item__person person">
-                    <p class="person__name">John Smith</p>
-                    <p class="person__position">Marketing Director at XYZ Corp</p>
-                  </div>
-                </div>
-                <div class="testimonials__item testimonials-item slide">
-                  <div class="testimonials-item__text">
-                    <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
-                  </div>
-                  <div class="testimonials-item__person person">
-                    <p class="person__name">John Smith</p>
-                    <p class="person__position">Marketing Director at XYZ Corp</p>
-                  </div>
-                </div>
-                <div class="testimonials__item testimonials-item slide">
-                  <div class="testimonials-item__text">
-                    <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
-                  </div>
-                  <div class="testimonials-item__person person">
-                    <p class="person__name">John Smith</p>
-                    <p class="person__position">Marketing Director at XYZ Corp</p>
-                  </div>
-                </div>
-              </div>
-              <div class="testimonials__controls conrols">
-                <div class="controls__arrow arrow-left prev-btn">
+              <div class="testimonials__items slider-wrapper">
+                <div class="testimonials__arrow arrow-left prev-btn">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M22 13.5C22.8284 13.5 23.5 12.8284 23.5 12C23.5 11.1716 22.8284 10.5 22 10.5L22 13.5ZM0.93934 10.9393C0.353553 11.5251 0.353553 12.4749 0.93934 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97918 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.93934 10.9393ZM22 10.5L2 10.5L2 13.5L22 13.5L22 10.5Z" fill="white" fill-opacity="0.3"/>
                     </svg>
                 </div>
+                <div class="testimonails__slides slides-container">
+                  <div class="testimonails__slide testimonials-item slide-active">
+                    <div class="testimonials-item__text">
+                    <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                  </div>
+                  <div class="testimonials-item__person person">
+                    <p class="person__name">John Smith</p>
+                    <p class="person__position">Marketing Director at XYZ Corp</p>
+                  </div>
+                  </div>
+                  <div class="testimonails__slide testimonials-item">
+                    <div class="testimonials-item__text">
+                    <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                  </div>
+                  <div class="testimonials-item__person person">
+                    <p class="person__name">John Smith</p>
+                    <p class="person__position">Marketing Director at XYZ Corp</p>
+                  </div>
+                  </div>
+                  <div class="testimonails__slide testimonials-item last">
+                    <div class="testimonials-item__text">
+                    <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                  </div>
+                  <div class="testimonials-item__person person">
+                    <p class="person__name">John Smith</p>
+                    <p class="person__position">Marketing Director at XYZ Corp</p>
+                  </div>
+                  </div>
+                </div>
+                <div class="testimonials__arrow arrow-right next-btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5L2 10.5ZM23.0607 13.0607C23.6464 12.4749 23.6464 11.5251 23.0607 10.9393L13.5147 1.3934C12.9289 0.807614 11.9792 0.807614 11.3934 1.3934C10.8076 1.97919 10.8076 2.92893 11.3934 3.51472L19.8787 12L11.3934 20.4853C10.8076 21.0711 10.8076 22.0208 11.3934 22.6066C11.9792 23.1924 12.9289 23.1924 13.5147 22.6066L23.0607 13.0607ZM2 13.5L22 13.5L22 10.5L2 10.5L2 13.5Z" fill="white"/>
+                    </svg>
+                </div>
+                </div>
+                
+              </div>
+              <div class="testimonials__controls conrols">
                 <div class="controls__dots controls-dots">
                   <div class="controls-dots__item .controls-dots__item--active">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -528,16 +523,10 @@
                     </svg>
                   </div>
                 </div>
-                <div class="controls__arrow arrow-right next-btn">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5L2 10.5ZM23.0607 13.0607C23.6464 12.4749 23.6464 11.5251 23.0607 10.9393L13.5147 1.3934C12.9289 0.807614 11.9792 0.807614 11.3934 1.3934C10.8076 1.97919 10.8076 2.92893 11.3934 3.51472L19.8787 12L11.3934 20.4853C10.8076 21.0711 10.8076 22.0208 11.3934 22.6066C11.9792 23.1924 12.9289 23.1924 13.5147 22.6066L23.0607 13.0607ZM2 13.5L22 13.5L22 10.5L2 10.5L2 13.5Z" fill="white"/>
-                    </svg>
-                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+      </section> -->
       <section class="contact section-mb" id="contact">
         <div class="contact__container container">
           <div class="contact__body">
@@ -592,7 +581,6 @@
               <div class="logo__text">Positivus</div>
             </div>
             <div class="footer__menu menu">
-              <button class="menu__icon icon-menu" type="button"><span></span></button>
               <nav class="menu__body">
                 <ul class="footer__menu-list">
                   <li class="menu__item"><a href="#" class="menu__link footer-link">About Us</a></li>
