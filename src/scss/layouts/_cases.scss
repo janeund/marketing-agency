@@ -59,3 +59,28 @@
 
 
   
+// Phones: stack the cases instead of squeezing three columns
+@media (max-width: 706px) {
+  .cases__items {
+    flex-direction: column;
+    padding: toRem(24);
+    border-radius: toRem(30);
+  }
+
+  .cases-item {
+    padding: toRem(20) 0;
+  }
+
+  .cases-item:first-child {
+    padding-top: 0;
+  }
+
+  .cases-item:last-child {
+    padding-bottom: 0;
+  }
+
+  .cases-item:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid $colorWhite;
+  }
+}

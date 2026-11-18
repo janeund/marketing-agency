@@ -1,7 +1,7 @@
 import "./scss/style.scss";
 
 window.addEventListener('DOMContentLoaded', () => {
-  //burgerOpen();
+  burgerOpen();
   showProcessItems();
   //slider();
 })
@@ -21,27 +21,40 @@ function showProcessItems() {
 }); 
 }
 
+// Mobile menu: the burger toggles a full-screen menu (screens up to 890px)
 function burgerOpen() {
   const burgerBtn = document.querySelector('.burger-menu');
-  const sidebar = document.querySelector('.sidebar');
-  const sidebarLink = document.querySelectorAll('.sidebar__menu-list li');
+  const menu = document.querySelector('.header__menu-body');
+  if (!burgerBtn || !menu) return;
+
+  function setOpen(open) {
+    document.body.classList.toggle('menu-open', open);
+    burgerBtn.classList.toggle('_active', open);
+    burgerBtn.setAttribute('aria-expanded', String(open));
+    burgerBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  }
 
   burgerBtn.addEventListener('click', () => {
-  sidebar.classList.toggle('show-sidebar');
-  burgerBtn.classList.toggle('_active');
+    setOpen(!document.body.classList.contains('menu-open'));
+  });
 
-  const linksArray = [...sidebarLink];
-  console.log(linksArray);
-  linksArray.map((item) => {
-     item.addEventListener("click", () => { 
-        console.log(item.classList.contains('sidebar__menu-item'));
-        if (item.classList.contains('sidebar__menu-item')) {
-           sidebar.classList.remove('show-sidebar');
-        }
-     });
+  // Close after choosing a section
+  menu.addEventListener('click', (e) => {
+    if (e.target.closest('a')) setOpen(false);
   });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && document.body.classList.contains('menu-open')) {
+      setOpen(false);
+      burgerBtn.focus();
+    }
   });
-};
+
+  // Reset if the screen gets wide again while the menu is open
+  window.matchMedia('(min-width: 891px)').addEventListener('change', (e) => {
+    if (e.matches) setOpen(false);
+  });
+}
 
 // function slider() {
 //   const slidesContainer = document.querySelectorAll("slides-container");

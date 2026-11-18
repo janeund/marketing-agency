@@ -80,5 +80,12 @@
     flex-direction: column;
     gap: toRem(20);
   }
+  // Scale the illustration to the screen instead of cropping it
+  .hero__image svg {
+    display: block;
+    width: 100%;
+    max-width: toRem(400);
+    height: auto;
+    margin-inline: auto;
+  }
 }
-  

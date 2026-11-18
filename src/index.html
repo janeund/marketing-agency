@@ -20,7 +20,7 @@
           <div class="logo__text">Positivus</div>
         </a>
         <div class="header__menu menu">
-          <nav class="header__menu-body">
+          <nav class="header__menu-body" id="main-menu">
             <ul class="header__menu-list">
               <li class="menu__item"><a href="#hero" class="menu__link header-link">About Us</a></li>
               <li class="menu__item"><a href="#services" class="menu__link header-link">Services</a></li>
@@ -28,14 +28,14 @@
               <li class="menu__item"><a href="#contact" class="menu__link header-link">Contact Us</a></li>
             </ul>
           </nav>
-          <a class="header__cta">Contact Us</a>
+          <a class="header__cta" href="#contact">Contact Us</a>
         </div>
         
-        <div class="burger-menu">
+        <button class="burger-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-menu">
           <span class="menu-line"></span>
           <span class="menu-line"></span>
           <span class="menu-line"></span>
-        </div>
+        </button>
       </div>
     </header>
     <main class="page">
@@ -583,10 +583,10 @@
             <div class="footer__menu menu">
               <nav class="menu__body">
                 <ul class="footer__menu-list">
-                  <li class="menu__item"><a href="#" class="menu__link footer-link">About Us</a></li>
-                  <li class="menu__item"><a href="#" class="menu__link footer-link">Services</a></li>
-                  <li class="menu__item"><a href="#" class="menu__link footer-link">Use Cases</a></li>
-                  <li class="menu__item"><a href="#" class="menu__link footer-link">Contact Us</a></li>
+                  <li class="menu__item"><a href="#hero" class="menu__link footer-link">About Us</a></li>
+                  <li class="menu__item"><a href="#services" class="menu__link footer-link">Services</a></li>
+                  <li class="menu__item"><a href="#cases" class="menu__link footer-link">Use Cases</a></li>
+                  <li class="menu__item"><a href="#contact" class="menu__link footer-link">Contact Us</a></li>
                 </ul>
               </nav>
             </div>
