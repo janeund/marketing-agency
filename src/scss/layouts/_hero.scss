@@ -1,8 +1,8 @@
 @use "../abstracts/index" as *;
 
+// Height follows the content; section-mb gives the same gap as other sections
 .hero {
   padding-top: toRem(70);
-  min-height: 100vh;
   &__body {
     display: flex;
     justify-content: space-between;
