@@ -62,6 +62,7 @@ module.exports = {
       filename: 'index.html',
       template: './src/index.html',
     }),
-    new MiniCssExtractPlugin()
+    // Hash in the name so browsers never keep a stale stylesheet after a deploy
+    new MiniCssExtractPlugin({ filename: "[name][contenthash].css" })
   ]
 }
